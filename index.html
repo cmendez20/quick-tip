@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Tip</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 class="h1-heading">Quick Tip</h1>
+    </header>
+
+    <section class="card card--intro">
+      <div class="card__bill-amount flex-container">
+        <p>Bill</p>
+        <input id="billAmount" class="bill-amount" type="number" placeholder="Your bill" name="billAmount">
+      </div>
+      <div class="card__tip-amount flex-container">
+        <p>Select tip</p>
+        <p id="tipOutput"></p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="0" class="slider" id="tipRange">
+      </div>
+      <div>
+        <hr class="rounded">
+      </div>
+      <div class="card__total flex-container">
+        <p>Total</p>
+        <p id="billTotal" value="0"></p>
+      </div>
+    </section>
+
+    <section class="card card--outro">
+      <div class="card__split flex-container">
+        <p>Split</p>
+        <p id="numPeople"></p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="1" max="10" value="0" class="slider" id="splitBillRange">
+      </div>
+      <div class="card__bill-each flex-container">
+        <p>Bill each</p>
+        <p>$ 20.00</p>
+      </div>
+      <div class="tip-each flex-container">
+        <p>Tip each</p>
+        <p>$ 0</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
